@@ -144,13 +144,17 @@ Pivoting:https://attack.mitre.org/tactics/TA0008/
 
 "Pivoting" is the technique an adversary uses to reach other systems within a network that are not otherwise accessible (for example, they are not exposed to the internet). There are often many systems in a network that are not directly reachable and often contain valuable data or have weaker security.
 
+#Principles of security:
+
+CIA - Confidentiality, integrity and availability
+
+Two key concepts are used to assign and manage the access rights of individuals: Privileged Identity Management (PIM) and Privileged Access Management (or PAM for short).Initially, these two concepts can seem to overlap; however, they are different from one another. PIM is used to translate a user's role within an organisation into an access role on a system. Whereas PAM is the management of the privileges a system's access role has, amongst other things.
 
 
 
+## The Bell-La Padula Model
 
-
-
-
+## Biba Model
 
 
 
