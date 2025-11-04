@@ -92,8 +92,67 @@ DNS (Domain Name Server), where the infected machine makes constant DNS requests
 
 
 
-# Unified Kill Chain (LINK:https://www.unifiedkillchain.com/assets/The-Unified-Kill-Chain.pdf)
+# Unified Kill Chain 
+
+(LINK:https://www.unifiedkillchain.com/assets/The-Unified-Kill-Chain.pdf)
+
 => a framework that is used to complement other frameworks such as MITRE.
+
+Reconnaissance:https://attack.mitre.org/tactics/TA0043/
+
+Information gathered from this phase can include:
+
+Discovering what systems and services are running on the target, this is beneficial information in the weaponisation and exploitation phases of this section. 
+Finding contact lists or lists of employees that can be impersonated or used in either a social engineering or phishing attack.
+Looking for potential credentials that may be of use in later stages,  such as pivoting or initial access.
+Understanding the network topology and other networked systems can be used to pivot too. 
+
+Weaponization:https://attack.mitre.org/tactics/TA0001/
+
+Social Engineering:https://attack.mitre.org/tactics/TA0002/
+
+Getting a user to open a malicious attachment.
+Impersonating a web page and having the user enter their credentials.
+Calling or visiting the target and impersonating a user (for example, requesting a password reset) or being able to gain access to areas of a site that the attacker would not previously be capable of (for example, impersonating a utility engineer).
+
+Exploitation:https://attack.mitre.org/tactics/TA0002/
+
+Uploading and executing a reverse shell to a web application.
+Interfering with an automated script on the system to execute code.
+Abusing a web application vulnerability to execute code on the system it is running on.
+
+Persistence:https://attack.mitre.org/tactics/TA0003/
+
+Creating a service on the target system that will allow the attacker to regain access.
+Adding the target system to a Command & Control server where commands can be executed remotely at any time.
+Leaving other forms of backdoors that execute when a certain action occurs on the system (i.e. a reverse shell will execute when a system administrator logs in).
+
+Defence Evasion:https://attack.mitre.org/tactics/TA0005/
+
+Web application firewalls.
+Network firewalls.
+Anti-virus systems on the target machine.
+Intrusion detection systems.
+
+Command & Control:https://attack.mitre.org/tactics/TA0011/
+
+Execute commands.
+Steal data, credentials and other information.
+Use the controlled server to pivot to other systems on the network.
+
+Pivoting:https://attack.mitre.org/tactics/TA0008/
+
+"Pivoting" is the technique an adversary uses to reach other systems within a network that are not otherwise accessible (for example, they are not exposed to the internet). There are often many systems in a network that are not directly reachable and often contain valuable data or have weaker security.
+
+
+
+
+
+
+
+
+
+
 
 
 
