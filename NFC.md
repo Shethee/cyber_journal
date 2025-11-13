@@ -1,1 +1,1 @@
-
+NFC=Near Field Communication 
